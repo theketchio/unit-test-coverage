@@ -81,8 +81,8 @@ func getCoverage(filename string) (coverage, error) {
 			if err != nil {
 				return nil, err
 			}
+			coverageMap[vals[1]] = percentage
 		}
-		coverageMap[vals[1]] = percentage
 	}
 
 	return coverageMap, err
